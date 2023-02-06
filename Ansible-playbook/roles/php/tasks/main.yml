@@ -62,12 +62,9 @@
 - name: checkout latest code from github
   git: >
     repo=https://github.com/devops4solutions/lavaral_project.git
-    dest=/opt/{{ vhost_name }}
+    dest=/srv/{{ vhost_name }}
     force=yes
     accept_hostkey=yes
-
-- name: copy lavarel project
-  shell: sudo mv /opt/{{ vhost_name }} /var/www/html/
 
 - name: Change permission
   shell: sudo chgrp -R www-data /var/www/html/{{ vhost_name }}/

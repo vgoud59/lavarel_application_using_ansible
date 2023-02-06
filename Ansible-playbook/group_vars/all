@@ -1,6 +1,6 @@
 php_version: 7.4
 username: ubuntu
-vhost_name: lavarel_project
+vhost_name: cms
 server_document_root: "/srv/cms"
 
 
