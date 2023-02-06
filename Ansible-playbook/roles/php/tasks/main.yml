@@ -64,7 +64,7 @@
   git:
     repo: "{{ GIT_REPO }}"
     version: "{{ GIT_BRANCH }}"
-    dest=/var/www/html/{{vhost_name}}
+    dest= "/var/www/html/{{vhost_name}}"
     force=yes
     accept_hostkey: yes
       become: no
