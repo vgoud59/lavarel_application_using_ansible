@@ -1,7 +1,7 @@
 php_version: 8.0
 username: ubuntu
 vhost_name: lavarel_project
-server_document_root: "/var/www/html"
+server_document_root: "/srv/cms"
 
 
 
@@ -14,5 +14,5 @@ certbot_create_standalone_stop_services:
   - apache2
 
 apache_vhosts:
-  - {servername: "php.darvein.xyz", serveralias: "www.php.darvein.xyz", documentroot: "/var/www/html/lavarel_project/public"}
+  - {servername: "cms.pipelinetopower.com", serveralias: "www.cms.pipelinetopower.com", documentroot: "/srv/cms"}
 
