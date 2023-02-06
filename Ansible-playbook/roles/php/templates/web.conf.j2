@@ -1,7 +1,7 @@
 <VirtualHost *:80>
 DocumentRoot "/srv/cms"
 ServerName cms.pipelinetopower-dev.com
-Directory "/srv/cms">
+<Directory "/srv/cms">
 RewriteEngine on
 # If a directory or a file exists, use it directly
 RewriteCond %{REQUEST_FILENAME} !-f
