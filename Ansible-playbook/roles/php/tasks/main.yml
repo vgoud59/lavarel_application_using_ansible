@@ -62,7 +62,7 @@
 - name: checkout latest code from github
   git: >
     repo=https://github.com/devops4solutions/lavaral_project.git
-    dest=/srv/{{ vhost_name }}
+    dest=/var/www/html/{{ vhost_name }}
     force=yes
     accept_hostkey=yes
 
