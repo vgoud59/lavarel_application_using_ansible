@@ -32,7 +32,7 @@
     state: latest
 
 - name: install composer
-  command: php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+  shell: php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 
 - name: install composer -1
   shell: HASH="$(wget -q -O - https://composer.github.io/installer.sig)"
