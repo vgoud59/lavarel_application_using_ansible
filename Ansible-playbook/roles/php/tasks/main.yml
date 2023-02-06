@@ -30,6 +30,9 @@
       - php{{php_version}}-intl
       - php{{php_version}}-dom
     state: latest
+    
+- name: who
+  shell: pwd
 
 - name: install composer
   shell: php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
