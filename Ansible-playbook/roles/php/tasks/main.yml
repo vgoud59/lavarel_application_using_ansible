@@ -67,10 +67,10 @@
     accept_hostkey=yes
 
 - name: Change permission
-  shell: sudo chgrp -R www-data /srv/{{ vhost_name }}/
+  shell: sudo chgrp -R www-data /var/www/html/{{ vhost_name }}/
 
 - name: Change permission
-  shell: sudo chmod -R 775 /srv/{{ vhost_name }}/storage
+  shell: sudo chmod -R 775 /var/www/html/{{ vhost_name }}/storage
 
 - name: Remove default apache vhost config from sites-enabled
   file: name=/etc/apache2/sites-enabled/000-default.conf state=absent
