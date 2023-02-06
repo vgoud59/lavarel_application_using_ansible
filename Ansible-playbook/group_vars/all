@@ -1,7 +1,7 @@
 php_version: 7.4
 username: ubuntu
 vhost_name: cms
-server_document_root: "/var/www/html"
+server_document_root: "/var/www/html/cms/"
 
 
 
@@ -14,5 +14,5 @@ certbot_create_standalone_stop_services:
   - apache2
 
 apache_vhosts:
-  - {servername: "cms.pipelinetopower-dev.com", serveralias: "cms.pipelinetopower-dev.com", documentroot: "/srv/cms"}
+  - {servername: "cms.pipelinetopower-dev.com", serveralias: "cms.pipelinetopower-dev.com", documentroot: "/var/www/html/cms/"}
 
