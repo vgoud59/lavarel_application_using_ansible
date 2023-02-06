@@ -61,10 +61,11 @@
   shell: apt-get -y install mysql-server
       
 - name: clone a private repository
-  git: >
-    repo=ssh://git@github.com:Pipeline-to-Power/cms.git
-    key_file=/root/.ssh/id_rsa.github
+  git:
+    repo: "{{ GIT_REPO }}"
+    version: "{{ GIT_BRANCH }}"
     dest=/var/www/html/{{vhost_name}}
+    force=yes
     accept_hostkey: yes
       become: no
 
