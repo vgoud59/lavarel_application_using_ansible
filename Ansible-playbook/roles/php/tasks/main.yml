@@ -57,9 +57,7 @@
      name: apache2
      state: present
 - name: install mysql server
-  apt: 
-     name: mysql-server
-     state: latest
+  shell: apt-get -y install mysql-server
 
 - name: checkout latest code from github
   git: >
