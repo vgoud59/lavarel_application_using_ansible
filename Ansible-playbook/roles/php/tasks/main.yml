@@ -67,7 +67,6 @@
     dest: "/var/www/html/{{vhost_name}}"
     force: yes
     accept_hostkey: yes
-      become: no
 
 - name: Change permission
   shell: sudo chgrp -R www-data /var/www/html/{{ vhost_name }}/
