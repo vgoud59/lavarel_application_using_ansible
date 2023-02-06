@@ -1,5 +1,5 @@
-- name: Upgrade System
-  apt: upgrade=dist update_cache=yes
+#- name: Upgrade System
+ # apt: upgrade=dist update_cache=yes
 
 - name: Add php repository
   apt_repository:
