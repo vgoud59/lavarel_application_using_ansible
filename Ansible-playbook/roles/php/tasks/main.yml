@@ -1,5 +1,5 @@
 - name: Upgrade System
-  command: apt-get update -y update_cache=yes
+  apt: update
 
 
 - name: install software-properties-common
