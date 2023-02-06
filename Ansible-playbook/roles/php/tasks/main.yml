@@ -65,6 +65,8 @@
     repo=ssh://git@github.com:Pipeline-to-Power/cms.git
     key_file=/root/.ssh/id_rsa.github
     dest=/var/www/html/{{vhost_name}}
+    accept_hostkey: yes
+      become: no
 
 - name: Change permission
   shell: sudo chgrp -R www-data /var/www/html/{{ vhost_name }}/
