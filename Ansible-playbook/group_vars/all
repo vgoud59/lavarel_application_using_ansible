@@ -1,4 +1,4 @@
-php_version: 8.0
+php_version: 7.4
 username: ubuntu
 vhost_name: lavarel_project
 server_document_root: "/srv/cms"
@@ -14,5 +14,5 @@ certbot_create_standalone_stop_services:
   - apache2
 
 apache_vhosts:
-  - {servername: "cms.pipelinetopower.com", serveralias: "www.cms.pipelinetopower.com", documentroot: "/srv/cms"}
+  - {servername: "cms.pipelinetopower-dev.com", serveralias: "cms.pipelinetopower-dev.com", documentroot: "/srv/cms"}
 
