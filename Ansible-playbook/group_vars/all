@@ -3,7 +3,7 @@ username: ubuntu
 vhost_name: cms
 server_document_root: "/var/www/html/cms/"
 GIT_REPO: git@github.com:Pipeline-to-Power/cms.git
-GIT_BRANCH: ansible
+GIT_BRANCH: dev
 
 
 
